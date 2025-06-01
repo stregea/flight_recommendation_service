@@ -59,3 +59,7 @@ jacocoTestCoverageVerification {
         }
     }
 }
+
+bootRun {
+    systemProperty('spring.profiles.active', System.getenv('SPRING_PROFILES_ACTIVE') ?: 'local')
+}
