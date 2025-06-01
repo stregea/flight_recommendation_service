@@ -26,4 +26,6 @@ replay_pid*
 .gradle
 .idea
 build
-src/main/resources/application-local.yaml
+
+# Ignore any local files
+*-local.yaml
