@@ -1,6 +1,5 @@
-package com.samueltregea.flight_recommendation_service.domain;
+package com.samueltregea.flight_recommendation_service.domain.aviationstack;
 
-import com.samueltregea.flight_recommendation_service.domain.aviationstack.FlightItinerary;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
