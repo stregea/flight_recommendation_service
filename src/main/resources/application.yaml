@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: flight_recommendation_service
+
+api:
+  keys:
+    aviationstack: insert_api_token_here
