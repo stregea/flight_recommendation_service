@@ -1,5 +1,6 @@
-package com.samueltregea.flight_recommendation_service.domain.aviationstack;
+package com.samueltregea.flight_recommendation_service.lib.domain.aviationstack;
 
+import com.samueltregea.flight_recommendation_service.lib.domain.aviationstack.Departure;
 import org.junit.jupiter.api.Test;
 
 import java.time.OffsetDateTime;

@@ -1,4 +1,4 @@
-package com.samueltregea.flight_recommendation_service.domain.aviationstack;
+package com.samueltregea.flight_recommendation_service.lib.domain.aviationstack;
 
 import org.junit.jupiter.api.Test;
 

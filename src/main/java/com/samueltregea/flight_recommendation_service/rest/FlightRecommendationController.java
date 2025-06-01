@@ -1,6 +1,6 @@
 package com.samueltregea.flight_recommendation_service.rest;
 
-import com.samueltregea.flight_recommendation_service.domain.aviationstack.FlightData;
+import com.samueltregea.flight_recommendation_service.lib.domain.aviationstack.FlightData;
 import com.samueltregea.flight_recommendation_service.service.AviationStackService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

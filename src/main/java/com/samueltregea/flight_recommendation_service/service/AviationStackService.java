@@ -1,7 +1,7 @@
 package com.samueltregea.flight_recommendation_service.service;
 
-import com.samueltregea.flight_recommendation_service.api.aviationstack.FlightResponse;
-import com.samueltregea.flight_recommendation_service.domain.aviationstack.FlightData;
+import com.samueltregea.flight_recommendation_service.lib.api.aviationstack.FlightResponse;
+import com.samueltregea.flight_recommendation_service.lib.domain.aviationstack.FlightData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,8 +44,6 @@ public class AviationStackService {
         try {
             LOG.info("Beginning connection to the AviationStack API with parameters: departingAirport={}, arrivingAirport={}",
                     departingAirport, arrivingAirport);
-
-            LOG.info("Beginning request to the {} endpoint.", url);
 
             // Build the API url and make the request.
             // todo: create function to dynamically create query string

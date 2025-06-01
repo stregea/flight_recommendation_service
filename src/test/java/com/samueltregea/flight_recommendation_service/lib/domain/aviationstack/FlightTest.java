@@ -1,6 +1,5 @@
-package com.samueltregea.flight_recommendation_service.domain.aviationstack;
+package com.samueltregea.flight_recommendation_service.lib.domain.aviationstack;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
