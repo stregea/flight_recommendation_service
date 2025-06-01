@@ -1,7 +1,6 @@
 package com.samueltregea.flight_recommendation_service.rest;
 
-
-import com.samueltregea.flight_recommendation_service.domain.aviationstack.Flight;
+import com.samueltregea.flight_recommendation_service.domain.aviationstack.FlightData;
 import com.samueltregea.flight_recommendation_service.service.AviationStackService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,11 +24,12 @@ public class FlightRecommendationController {
     }
 
     @GetMapping("/api/flights")
-    public List<Flight> getFlights(@RequestParam String departure, @RequestParam String arrival) {
+    public List<FlightData> getFlights(@RequestParam String departure, @RequestParam String arrival) {
         // Mock data for demonstration
-        List<Flight> flights = null;
+        List<FlightData> flights = null;
         LOG.info("-> getFlights");
         flights = aviationStackService.getFlights(departure, arrival);
         LOG.info("<- getFlights");
         return flights;
-    }}
+    }
+}
