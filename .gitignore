@@ -26,4 +26,4 @@ replay_pid*
 .gradle
 .idea
 build
-*/application-local.yaml
+src/main/resources/application-local.yaml
