@@ -28,7 +28,8 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
-    finalizedBy jacocoTestReport // Run JaCoCo report after tests
+    jacocoTestReport // Run JaCoCo report after tests
+    finalizedBy(jacocoTestCoverageVerification)
 }
 
 jacoco {
@@ -45,4 +46,16 @@ jacocoTestReport {
     }
 
     reports.html.outputLocation = layout.buildDirectory.dir('reports/jacoco/html')
+}
+
+jacocoTestCoverageVerification {
+    dependsOn jacocoTestReport
+
+    violationRules {
+        rule {
+            limit {
+                minimum = "0.90".toBigDecimal() // Set code coverage to a 90% minimum.
+            }
+        }
+    }
 }
