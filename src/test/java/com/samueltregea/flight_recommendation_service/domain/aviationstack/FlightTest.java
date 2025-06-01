@@ -6,22 +6,23 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class FlightTest {
-    Flight underTest;
-
-    @BeforeEach
-    public void setup() {}
 
     /**
-     * Test the standard Flight record and determine non-null values.
+     * Test the standard Flight record.
      */
     @Test
     public void testFlightRecord() {
-//        underTest = new Flight("Delta", "ROC", "ATL", "$400");
-//
-//        assertNotNull(underTest);
-//        assertNotNull(underTest.airline());
-//        assertNotNull(underTest.departure());
-//        assertNotNull(underTest.arrival());
-//        assertNotNull(underTest.price());
+        final String number = "2097";
+        final String iata = "DL2097";
+        final String icao = "DAL2097";
+        final Codeshared codeshared = new Codeshared(null, null);
+
+        Flight flight = new Flight(number, iata, icao, codeshared);
+
+        assertNotNull(flight);
+        assertNotNull(flight.number());
+        assertNotNull(flight.iata());
+        assertNotNull(flight.icao());
+        assertNotNull(flight.codeshared());
     }
 }
